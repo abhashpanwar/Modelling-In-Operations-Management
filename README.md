@@ -1,2 +1,2 @@
 # Modelling-In-Operations-Management
-Modelling In Operations Management Projects
+Projects on Modelling In Operations Management.
