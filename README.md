@@ -18,7 +18,7 @@
 |    ├── Model_TS.ipynb
 |    ├── config.py
 ```
-### The datasets sources are as Follows :
+### The dataset source as Follows :
 https://www.kaggle.com/c/rossmann-store-sales
 
 ### The paper we are following : 
