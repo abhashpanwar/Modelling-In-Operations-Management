@@ -1,6 +1,6 @@
 # Modelling-In-Operations-Management
 
-## Project 1:Retail Sector
+## 1) Project 1:Retail Sector
 
 ```
 ├── DATA
