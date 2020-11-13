@@ -34,6 +34,4 @@ To forecast the sale of a store and optimize it wrt the market demand. Since sto
 - To define the actual relationship between variables and their associated demand patterns.
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models.
 
-# Dataset:
-We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart dataset doesn’t contain many features and has a lot of missing values.
 
