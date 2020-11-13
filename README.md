@@ -1,6 +1,7 @@
 # Modelling-In-Operations-Management
 
 ## 1) Project 1:Retail Sector
+Report: https://github.com/abhashpanwar/Modelling-In-Operations-Management/blob/master/Project_1_Retail_Sector/Docs/Sales%20Forecasting%20Report.pdf
 
 ```
 ├── DATA
@@ -24,14 +25,5 @@ https://www.kaggle.com/c/rossmann-store-sales
 ### The paper we are following : 
 - Ali Fallah Tehrani and Diane Ahrens, "Improved Forecasting and Purchasing of Fashion Products based on the Use of Big Data Techniques"
 - A.L.D. Loureiro "Exploring the use of deep neural networks for sales forecasting in fashion retail"
-
-# Objective:
-To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more.
-
-# Goal: 
-- Explore the data (handle missing values etc).
-- Analysis per store type and correlational analysis of stores’ activity.
-- To define the actual relationship between variables and their associated demand patterns.
-- Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models.
 
 
