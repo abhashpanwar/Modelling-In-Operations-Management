@@ -4,6 +4,7 @@
 To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more. 
 
 ![](README.016.png)
+
 **Goal:**
 - Explore the data (handle missing values etc). 
 - Analysis per store type and correlational analysis of stores’ activity. 
@@ -11,6 +12,7 @@ To forecast the sale of a store and optimize it wrt the market demand. Since sto
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models. 
 
 ![](README.016.png)
+
 **Dataset:**
 We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart 
 
