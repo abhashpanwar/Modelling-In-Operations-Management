@@ -201,8 +201,8 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
   
 <h1>Contributors: </h1>
 
-<h4 align="center"> <a href="https://www.linkedin.com/in/akhitha-babu-b1a951115/">Akhitha Babu </h4>
+<h4 align="left"> <a href="https://www.linkedin.com/in/akhitha-babu-b1a951115/" target="_blank" >Akhitha Babu </a> </h4>
 
-<h4 align="center"> <a href="https://www.linkedin.com/in/sajal--sharma">Sajal Sharma</h4>
+<h4 align="left"> <a href="https://www.linkedin.com/in/sajal--sharma" target="_blank" >Sajal Sharma </a> </h4>
 
-<h4 align="center"> <a href="https://www.linkedin.com/in/abhash-panwar-85126976">Panwar Abhash Anil</h4></h4>
+<h4 align="left"> <a href="https://www.linkedin.com/in/abhash-panwar-85126976" target="_blank" >Panwar Abhash Anil </a> </h4>
