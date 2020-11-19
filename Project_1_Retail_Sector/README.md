@@ -1,21 +1,18 @@
 <h1 align="Center" >Sales Forecasting (Retail Sector) </h1>
 
-<h1>Objective:</h1>
-To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more. 
-
 <p align="center">
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
+<h1>Objective:</h1>
+To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more.
+
 <h1>Goal:</h1>
+
 - Explore the data (handle missing values etc). 
 - Analysis per store type and correlational analysis of stores’ activity. 
 - To define the actual relationship between variables and their associated demand patterns. 
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models. 
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
 
 <h1>Dataset:</h1>
 We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart dataset doesn’t contain many features and has a lot of missing values. 
@@ -30,10 +27,6 @@ results are the same(as shown below).
 
 ![](README.003.png)
 
-<p align="center">
- <img src="README.016.png" alt="hr" width=100%/>
-</p>
-
 <h1>Rossmann Dataset Overview:</h1>
 
 
@@ -43,10 +36,6 @@ results are the same(as shown below).
 |1 |train.csv |Store, DayOfWeek, Date, Sales, Customers, Open, Promo,StateHoliday,SchoolHoliday |9 |1017209 |
 |2 |test.csv |Id,Store,DayOfWeek,Date,Open,Promo, StateHoliday,SchoolHoliday |8 |41088 |
 |3 |store.csv |Store,StoreType,Assortment,Competitio nDistance,CompetitionOpenSinceMonth ,CompetitionOpenSinceYear,Promo2,Pr omo2SinceWeek,Promo2SinceYear,Pro moInterval |10 |1115 |
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
 
 <h1>Feature Engineering Intro:</h1>
 
@@ -74,30 +63,18 @@ results are the same(as shown below).
   ![](README.005.png)
 
   ![](README.006.png)
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
-
+  
 <h1>Models Implemented:</h1>
 
 - Time Series Models: AR, MA and ARIMA 
 - Machine learning models: Lasso Regression and Random Forest 
 - Deep Learning model: Deep Neural network (Feedforward Neural Network with backpropagation) 
 
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
-
 <h1>Evaluation Matrix:</h1>
 
 After applying different models we have to check the accuracy of the model and for that we are using RMSE and adjusted R^2 score. 
 
 R2 score will be used for Time Series models because Adjusted R2 will help in evaluation when there are more no. of features.
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
 
 <h1>Data Pre-Processing:</h1>
 
@@ -116,10 +93,6 @@ R2 score will be used for Time Series models because Adjusted R2 will help in ev
   The Sklearn library SelectFromModel is used for feature selection and base estimator is LassoRegression which will return 20 features which have more of an impact on the target variable. 
 
   **4)Split Dataset:** In this process, 80% of the data was split for the train data and 20% of the data was taken as test data. 
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
 
 <h1>Time Series Analysis</h1>
 
@@ -164,10 +137,6 @@ The p-value now is below the significance level, indicating that the series is s
 A Seasonal ARIMAX model is formed by including additional seasonal terms in the ARIMAX models. 
 
 ![](README.012.png)
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
 
 <h1>Machine Learning Models:</h1>
 
@@ -220,10 +189,6 @@ Result:
 | - | - |
 |Adj. R2 Score (Testing) |0.8956 or 89.56% |
 
-<p align="center">
-  <img src="README.016.png" alt="hr" width=100%/>
-</p>
-
 <h1>Over-All Evaluation:</h1>
 
 The below graph shows that Random Forest Regressor performs better as compared to other models. 
@@ -233,13 +198,6 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
 ![](README.017.png)
 
 ![](README.018.png)
-
-
-<p align="center">
-  <img src="README.016.png" alt="hr" width=50%/>
-</p>
-
-
   
 <h1>Contributors: </h1>
 
