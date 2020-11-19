@@ -1,19 +1,19 @@
-*Sales Forecasting (Retail Sector)*
+**Sales Forecasting (Retail Sector)**
 
-*Objective:*
+**Objective:**
 
 To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, 
 
 competition, school and state holidays, seasonality, and locality and many more. 
 
-*Goal:*
+**Goal:**
 
 - Explore the data (handle missing values etc). 
 - Analysis per store type and correlational analysis of stores’ activity. 
 - To define the actual relationship between variables and their associated demand patterns. 
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models. 
 
-*Dataset:* 
+**Dataset:**
 
 We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart 
 
@@ -29,7 +29,7 @@ results are the same(as shown below).
 
 ![](README.003.png)
 
-*Rossmann Dataset Overview:* 
+**Rossmann Dataset Overview:**
 
 
 
@@ -39,82 +39,80 @@ results are the same(as shown below).
 |2 |test.csv |Id,Store,DayOfWeek,Date,Open,Promo, StateHoliday,SchoolHoliday |8 |41088 |
 |3 |store.csv |Store,StoreType,Assortment,Competitio nDistance,CompetitionOpenSinceMonth ,CompetitionOpenSinceYear,Promo2,Pr omo2SinceWeek,Promo2SinceYear,Pro moInterval |10 |1115 |
 
-*Feature Engineering Intro:*
+**Feature Engineering Intro:**
 
-**Step 1:** Firstly we analysis the data and detect missing values and handle them with appropriate methods. 
+  **Step 1:** Firstly we analysis the data and detect missing values and handle them with appropriate methods. 
 
-**Step 2:** 
+  **Step 2:** 
 
-- Filled missing values with proper method: 
-- Removed missing observations in train.csv when Open=0 because when the store is closed there is zero number of sales. 
-- Handled missing observations in store.csv with different methods like : 
-- Simple Computer with strategy mean for column ‘ComeptitionDistance’. 
-- Simple Imputer with strategy median for column ‘CompetitionOpenSinceMonth’ and ‘CompetitionOpenSinceYear’. 
-- And for column ‘Promo2SinceWeek’, ‘Promo2SinceYear’ and ‘Promo2Interval’ we filled them with 0 as ‘Promo2’ has 0 value. 
-- Split data by Stores to predict sales of individual stores. 
-- Split data by Dates, Monthly and Year to check seasonality. (For Time Series model)
+  - Filled missing values with proper method: 
+  - Removed missing observations in train.csv when Open=0 because when the store is closed there is zero number of sales. 
+  - Handled missing observations in store.csv with different methods like : 
+  - Simple Computer with strategy mean for column ‘ComeptitionDistance’. 
+  - Simple Imputer with strategy median for column ‘CompetitionOpenSinceMonth’ and ‘CompetitionOpenSinceYear’. 
+  - And for column ‘Promo2SinceWeek’, ‘Promo2SinceYear’ and ‘Promo2Interval’ we filled them with 0 as ‘Promo2’ has 0 value. 
+  - Split data by Stores to predict sales of individual stores. 
+  - Split data by Dates, Monthly and Year to check seasonality. (For Time Series model)
 
-**Step 3:** Then the data with no null values are taken for encoding for which we first change the object data type to the relevant one and then applied different feature engineering methods like label encoding and one hot encoding method to increase the number of features so total 23 new features are created. 
+  **Step 3:** Then the data with no null values are taken for encoding for which we first change the object data type to the relevant one and then applied different feature engineering methods like label encoding and one hot encoding method to increase the number of features so total 23 new features are created. 
 
-**Step 4:** We also did some visualization techniques to visualize what we are doing like using a heat map. We checked the correlation between the columns which was helpful for checking the relation between columns. 
+  **Step 4:** We also did some visualization techniques to visualize what we are doing like using a heat map. We checked the correlation between the columns which was helpful for checking the relation between columns. 
 
-![](README.004.png)
+  ![](README.004.png)
 
-**Step 5:** Data also contains some values which were dependent on other columns so we visualize that too and in the same way we checked for particular year and its sale. 
+  **Step 5:** Data also contains some values which were dependent on other columns so we visualize that too and in the same way we checked for particular year and its sale. 
 
-![](README.005.png)
+  ![](README.005.png)
 
-![](README.006.png)
+  ![](README.006.png)
 
-*Models Implemented:*
+**Models Implemented:**
 
 - Time Series Models: AR, MA and ARIMA 
 - Machine learning models: Lasso Regression and Random Forest 
 - Deep Learning model: Deep Neural network (Feedforward Neural Network with backpropagation) 
 
-*Evaluation Matrix:*
+**Evaluation Matrix:**
 
 After applying different models we have to check the accuracy of the model and for that we are using RMSE and adjusted R^2 score. 
 
 R2 score will be used for Time Series models because Adjusted R2 will help in evaluation when there are more no. of features.
 
-*Data Pre-Processing:*
+**Data Pre-Processing:**
 
-**1)Label Encoder/One Hot Vector:** In our dataset, there are categorical variables and to apply the ML models, we need to transform these categorical variables into numerical variables. And this problem is solved in the feature engineering section. 
+  **1)Label Encoder/One Hot Vector:** In our dataset, there are categorical variables and to apply the ML models, we need to transform these categorical variables into numerical variables. And this problem is solved in the feature engineering section. 
 
-**2)Normalization:** 
+  **2)Normalization:** 
 
-There are two columns i.e CompetitionDistance, Customers whose values are not in the standard range with comparison to the overall dataset. 
+  There are two columns i.e CompetitionDistance, Customers whose values are not in the standard range with comparison to the overall dataset. 
 
-In this project, these two features are normalized using the MinMaxScaler method (sklearn library) instead of standardization (StandardScaler) because, on standardization, most features values are negative that impact badly on the model. 
+  In this project, these two features are normalized using the MinMaxScaler method (sklearn library) instead of standardization (StandardScaler) because, on standardization, most features values are negative that impact badly on the model. 
 
-**3)Feature Selection:** 
+  **3)Feature Selection:** 
 
-During Feature Engineering, lots of new features are created but all features are not required or all features are not important. 
+  During Feature Engineering, lots of new features are created but all features are not required or all features are not important. 
 
-The Sklearn library SelectFromModel is used for feature selection and base estimator is LassoRegression which will return 20 features which have more of an impact on the target variable. 
+  The Sklearn library SelectFromModel is used for feature selection and base estimator is LassoRegression which will return 20 features which have more of an impact on the target variable. 
 
-**4)Split Dataset:** In this process, 80% of the data was split for the train data and 20% 
+  **4)Split Dataset:** In this process, 80% of the data was split for the train data and 20% of the data was taken as test data. 
 
-of the data was taken as test data. 
-
-*Time Series Analysis*
+**Time Series Analysis**
 
 A moving average is a calculation used to analyze data points by creating a series of averages of different subsets of the full data set.  
 
 ![](README.007.png)
 
-**ACF and PACF Plots** 
+  **ACF and PACF Plots** 
 
-ACF is an (complete) auto-correlation function which gives us values of auto-correlation of any series with its lagged values. 
+  ACF is an (complete) auto-correlation function which gives us values of auto-correlation of any series with its lagged values. 
 
-![](README.008.png)
+  ![](README.008.png)
 
-PACF is a partial auto-correlation function that finds correlation of the residuals (which remains after removing the effects which are already explained by the earlier lag(s)) with the next lag value hence ‘partial’ and not ‘complete’ as we remove already found variations before we find the next correlation. So if there is any hidden information in the residual which can be modeled by the next lag, we might get a good correlation and we will keep that next lag as a feature while modeling. Remember while modeling we don’t want to keep too many features which are correlated as that can create multicollinearity issues. Hence we need to retain only the relevant features. 
+  PACF is a partial auto-correlation function that finds correlation of the residuals (which remains after removing the effects which are already explained by the earlier lag(s)) with the next lag value hence ‘partial’ and not ‘complete’ as we remove already found variations before we find the next correlation. So if there is any hidden information in the residual which can be modeled by the next lag, we might get a good correlation and we will keep that next lag as a feature while modeling. Remember while modeling we don’t want to keep too many features which are correlated as that can create multicollinearity issues. Hence we need to retain only the relevant features. 
 
-![](README.009.png)
+  ![](README.009.png)
 
-Time series algorithms are used extensively for analyzing and forecasting time-based data. ARIMA and SARIMAX class of models which are based on describing autocorrelations in the data are used. 
+  Time series algorithms are used extensively for analyzing and forecasting time-based data. ARIMA and SARIMAX class of models which are based on describing autocorrelations in the data are used. 
 
 1) **ARIMA (Autoregressive Integrated Moving Average)** 
 
@@ -142,7 +140,7 @@ A Seasonal ARIMAX model is formed by including additional seasonal terms in the 
 
 ![](README.012.png)
 
-*Machine Learning Models:*
+**Machine Learning Models:**
 
 1) **Lasso Regression:** LASSO stands for Least Absolute Shrinkage and Selection Operator. 
 
@@ -182,6 +180,7 @@ In our DNN, There is one input layer than 4 hidden layers and each layer consist
 Optimization algorithm: Adam is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. Adam is an adaptive learning rate optimization algorithm that's been designed specifically for training deep neural networks.  
 
 Loss Function: Mean Squared Error (MSE) loss function is used for this DNN. Loss Graph per epoch (max 1000): DNN is training 1000 times i.e 1000 epoch and results shown in the below graph. 
+
 ![](README.015.png)
 
 Result: 
@@ -191,6 +190,7 @@ Result:
 |Adj. R2 Score (Training) |0.8816 or 88.16% |
 | - | - |
 |Adj. R2 Score (Testing) |0.8956 or 89.56% |
+
 *Over-All Evaluation:*
 
 The below graph shows that Random Forest Regressor performs better as compared to other models. 
@@ -205,5 +205,6 @@ Contributors:
 
 *[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)*
 
-*[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)
-*[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)
+*[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)*
+
+*[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)*
