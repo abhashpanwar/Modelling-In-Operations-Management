@@ -195,7 +195,7 @@ Result:
 
 The below graph shows that Random Forest Regressor performs better as compared to other models. 
 
-For DNN, we have done hyperparameter tuning manually, but these are not the optimal values due to the hardware limitations we have not to reach. ![](README.016.png)
+For DNN, we have done hyperparameter tuning manually, but these are not the optimal values due to the hardware limitations we have not to reach.
 
 ![](README.017.png)
 
@@ -206,4 +206,4 @@ Contributors:
 *[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)*
 
 *[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)
-*[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/) ![](README.016.png)*
+*[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)
