@@ -241,14 +241,17 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
   <img src="README.016.png" alt="hr" width=50%/>
 </p>
 
+<p align="center">
+  
 Contributors: 
 
-*[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)*
+**[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)**
 
-*[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)*
+**[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)**
 
-*[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)*
+**[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)**
 
+</p>
 <p align="center">
   <img src="README.016.png" alt="hr" width=50%/>
 </p>
