@@ -4,7 +4,7 @@
 To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more. 
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Goal:**
@@ -14,7 +14,7 @@ To forecast the sale of a store and optimize it wrt the market demand. Since sto
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models. 
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Dataset:**
@@ -33,7 +33,7 @@ results are the same(as shown below).
 ![](README.003.png)
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+ <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Rossmann Dataset Overview:**
@@ -47,7 +47,7 @@ results are the same(as shown below).
 |3 |store.csv |Store,StoreType,Assortment,Competitio nDistance,CompetitionOpenSinceMonth ,CompetitionOpenSinceYear,Promo2,Pr omo2SinceWeek,Promo2SinceYear,Pro moInterval |10 |1115 |
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Feature Engineering Intro:**
@@ -78,7 +78,7 @@ results are the same(as shown below).
   ![](README.006.png)
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Models Implemented:**
@@ -88,7 +88,7 @@ results are the same(as shown below).
 - Deep Learning model: Deep Neural network (Feedforward Neural Network with backpropagation) 
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Evaluation Matrix:**
@@ -98,7 +98,7 @@ After applying different models we have to check the accuracy of the model and f
 R2 score will be used for Time Series models because Adjusted R2 will help in evaluation when there are more no. of features.
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Data Pre-Processing:**
@@ -120,7 +120,7 @@ R2 score will be used for Time Series models because Adjusted R2 will help in ev
   **4)Split Dataset:** In this process, 80% of the data was split for the train data and 20% of the data was taken as test data. 
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Time Series Analysis**
@@ -168,7 +168,7 @@ A Seasonal ARIMAX model is formed by including additional seasonal terms in the 
 ![](README.012.png)
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Machine Learning Models:**
@@ -223,7 +223,7 @@ Result:
 |Adj. R2 Score (Testing) |0.8956 or 89.56% |
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
 **Over-All Evaluation:**
@@ -238,7 +238,7 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
 
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=50%/>
 </p>
 
 Contributors: 
@@ -250,6 +250,6 @@ Contributors:
 *[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)*
 
 <p align="center">
-  <img src="README.016.png" alt="hr"/>
+  <img src="README.016.png" alt="hr" width=50%/>
 </p>
 
