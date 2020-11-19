@@ -1,19 +1,19 @@
-﻿**Sales Forecasting (Retail Sector)**
+*Sales Forecasting (Retail Sector)*
 
-**Objective:**
+*Objective:*
 
 To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, 
 
 competition, school and state holidays, seasonality, and locality and many more. 
 
-**Goal:**  
+*Goal:*
 
 - Explore the data (handle missing values etc). 
 - Analysis per store type and correlational analysis of stores’ activity. 
 - To define the actual relationship between variables and their associated demand patterns. 
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models. 
 
-**Dataset:** 
+*Dataset:* 
 
 We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart 
 
@@ -29,7 +29,7 @@ results are the same(as shown below).
 
 ![](README.003.png)
 
-**Rossmann Dataset Overview:** 
+*Rossmann Dataset Overview:* 
 
 
 
@@ -38,7 +38,8 @@ results are the same(as shown below).
 |1 |train.csv |Store, DayOfWeek, Date, Sales, Customers, Open, Promo,StateHoliday,SchoolHoliday |9 |1017209 |
 |2 |test.csv |Id,Store,DayOfWeek,Date,Open,Promo, StateHoliday,SchoolHoliday |8 |41088 |
 |3 |store.csv |Store,StoreType,Assortment,Competitio nDistance,CompetitionOpenSinceMonth ,CompetitionOpenSinceYear,Promo2,Pr omo2SinceWeek,Promo2SinceYear,Pro moInterval |10 |1115 |
-` `**Feature Engineering Intro:** 
+
+*Feature Engineering Intro:*
 
 **Step 1:** Firstly we analysis the data and detect missing values and handle them with appropriate methods. 
 
@@ -65,19 +66,19 @@ results are the same(as shown below).
 
 ![](README.006.png)
 
-**Models Implemented:** 
+*Models Implemented:*
 
 - Time Series Models: AR, MA and ARIMA 
 - Machine learning models: Lasso Regression and Random Forest 
 - Deep Learning model: Deep Neural network (Feedforward Neural Network with backpropagation) 
 
-**Evaluation Matrix:** 
+*Evaluation Matrix:*
 
 After applying different models we have to check the accuracy of the model and for that we are using RMSE and adjusted R^2 score. 
 
 R2 score will be used for Time Series models because Adjusted R2 will help in evaluation when there are more no. of features.
 
-**Data Pre-Processing:** 
+*Data Pre-Processing:*
 
 **1)Label Encoder/One Hot Vector:** In our dataset, there are categorical variables and to apply the ML models, we need to transform these categorical variables into numerical variables. And this problem is solved in the feature engineering section. 
 
@@ -97,7 +98,7 @@ The Sklearn library SelectFromModel is used for feature selection and base estim
 
 of the data was taken as test data. 
 
-**Time Series Analysis**
+*Time Series Analysis*
 
 A moving average is a calculation used to analyze data points by creating a series of averages of different subsets of the full data set.  
 
@@ -141,18 +142,17 @@ A Seasonal ARIMAX model is formed by including additional seasonal terms in the 
 
 ![](README.012.png)
 
-Machine Learning Models: 
+*Machine Learning Models:*
 
-1) **Lasso Regression:** LASSO stands for Least Absolute Shrinkage and Selection 
-
-Operator. 
+1) **Lasso Regression:** LASSO stands for Least Absolute Shrinkage and Selection Operator. 
 
 Lasso regression is one of the regularization methods that create parsimonious models in the presence of a large number of features, where large means either of the below two things: 
 
 1. Large enough to enhance the tendency of the model to over-fit. Minimum ten variables can cause overfitting. 
 1. Large enough to cause computational challenges. This situation can arise in the case of millions or billions of features
 
-Feature Importance Graph: ![](README.013.png)Result: 
+![](README.013.png)
+Result: 
 
 
 
@@ -165,7 +165,8 @@ The random forest regressor consists of many decision trees as a base estimator.
 
 In our model, 150 decisions are created with max\_depth 20. 
 
-Feature Importance graph: ![](README.014.png)Result: 
+![](README.014.png)
+Result: 
 
 
 
@@ -180,7 +181,8 @@ In our DNN, There is one input layer than 4 hidden layers and each layer consist
 
 Optimization algorithm: Adam is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. Adam is an adaptive learning rate optimization algorithm that's been designed specifically for training deep neural networks.  
 
-Loss Function: Mean Squared Error (MSE) loss function is used for this DNN. Loss Graph per epoch (max 1000): DNN is training 1000 times i.e 1000 epoch and results shown in the below graph. ![](README.015.png)
+Loss Function: Mean Squared Error (MSE) loss function is used for this DNN. Loss Graph per epoch (max 1000): DNN is training 1000 times i.e 1000 epoch and results shown in the below graph. 
+![](README.015.png)
 
 Result: 
 
@@ -189,7 +191,7 @@ Result:
 |Adj. R2 Score (Training) |0.8816 or 88.16% |
 | - | - |
 |Adj. R2 Score (Testing) |0.8956 or 89.56% |
-**Over-All Evaluation:** 
+*Over-All Evaluation:*
 
 The below graph shows that Random Forest Regressor performs better as compared to other models. 
 
@@ -201,6 +203,7 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
 
 Contributors: 
 
-[**Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)** 
+*[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)*
 
-[**Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/) **[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/) ![](README.016.png)**
+*[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)
+*[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/) ![](README.016.png)*
