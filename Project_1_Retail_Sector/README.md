@@ -3,7 +3,9 @@
 **Objective:**
 To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more. 
 
-![](README.016.png)
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
 
 **Goal:**
 - Explore the data (handle missing values etc). 
@@ -11,7 +13,9 @@ To forecast the sale of a store and optimize it wrt the market demand. Since sto
 - To define the actual relationship between variables and their associated demand patterns. 
 - Perform Time Series Analysis (MA, ARIMA, SARIMAX),Machine Learning(Lasso Regression and Random Forest)and Deep learning(Feedforward Neural Network with backpropagation) models. 
 
-![](README.016.png)
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
 
 **Dataset:**
 We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart 
@@ -27,7 +31,11 @@ In ROSSMANN dataset missing values are handled using simple imputers i.e mean & 
 results are the same(as shown below). 
 
 ![](README.003.png)
-![](README.016.png)
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
+
 **Rossmann Dataset Overview:**
 
 
@@ -37,6 +45,10 @@ results are the same(as shown below).
 |1 |train.csv |Store, DayOfWeek, Date, Sales, Customers, Open, Promo,StateHoliday,SchoolHoliday |9 |1017209 |
 |2 |test.csv |Id,Store,DayOfWeek,Date,Open,Promo, StateHoliday,SchoolHoliday |8 |41088 |
 |3 |store.csv |Store,StoreType,Assortment,Competitio nDistance,CompetitionOpenSinceMonth ,CompetitionOpenSinceYear,Promo2,Pr omo2SinceWeek,Promo2SinceYear,Pro moInterval |10 |1115 |
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
 
 **Feature Engineering Intro:**
 
@@ -65,17 +77,29 @@ results are the same(as shown below).
 
   ![](README.006.png)
 
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
+
 **Models Implemented:**
 
 - Time Series Models: AR, MA and ARIMA 
 - Machine learning models: Lasso Regression and Random Forest 
 - Deep Learning model: Deep Neural network (Feedforward Neural Network with backpropagation) 
 
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
+
 **Evaluation Matrix:**
 
 After applying different models we have to check the accuracy of the model and for that we are using RMSE and adjusted R^2 score. 
 
 R2 score will be used for Time Series models because Adjusted R2 will help in evaluation when there are more no. of features.
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
 
 **Data Pre-Processing:**
 
@@ -94,6 +118,10 @@ R2 score will be used for Time Series models because Adjusted R2 will help in ev
   The Sklearn library SelectFromModel is used for feature selection and base estimator is LassoRegression which will return 20 features which have more of an impact on the target variable. 
 
   **4)Split Dataset:** In this process, 80% of the data was split for the train data and 20% of the data was taken as test data. 
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
 
 **Time Series Analysis**
 
@@ -138,6 +166,10 @@ The p-value now is below the significance level, indicating that the series is s
 A Seasonal ARIMAX model is formed by including additional seasonal terms in the ARIMAX models. 
 
 ![](README.012.png)
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
 
 **Machine Learning Models:**
 
@@ -190,7 +222,11 @@ Result:
 | - | - |
 |Adj. R2 Score (Testing) |0.8956 or 89.56% |
 
-*Over-All Evaluation:*
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
+
+**Over-All Evaluation:**
 
 The below graph shows that Random Forest Regressor performs better as compared to other models. 
 
@@ -200,6 +236,11 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
 
 ![](README.018.png)
 
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
+
 Contributors: 
 
 *[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)*
@@ -207,3 +248,8 @@ Contributors:
 *[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)*
 
 *[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)*
+
+<p align="center">
+  <img src="README.016.png" alt="hr"/>
+</p>
+
