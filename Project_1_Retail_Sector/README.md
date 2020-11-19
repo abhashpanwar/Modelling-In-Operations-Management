@@ -1,13 +1,13 @@
-**Sales Forecasting (Retail Sector)**
+<h1 align="Center" >Sales Forecasting (Retail Sector) </h1>
 
-**Objective:**
+<h1>Objective:</h1>
 To forecast the sale of a store and optimize it wrt the market demand. Since store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality and many more. 
 
 <p align="center">
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Goal:**
+<h1>Goal:</h1>
 - Explore the data (handle missing values etc). 
 - Analysis per store type and correlational analysis of stores’ activity. 
 - To define the actual relationship between variables and their associated demand patterns. 
@@ -17,10 +17,8 @@ To forecast the sale of a store and optimize it wrt the market demand. Since sto
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Dataset:**
-We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart 
-
-dataset doesn’t contain many features and has a lot of missing values. 
+<h1>Dataset:</h1>
+We selected two datasets Walmart Store Sales and Rossmann Store Sales after studying both we decided to finalize the ROSSMANN as the Walmart dataset doesn’t contain many features and has a lot of missing values. 
 
 ![](README.001.png)![](README.002.png)
 
@@ -36,7 +34,7 @@ results are the same(as shown below).
  <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Rossmann Dataset Overview:**
+<h1>Rossmann Dataset Overview:</h1>
 
 
 
@@ -50,7 +48,7 @@ results are the same(as shown below).
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Feature Engineering Intro:**
+<h1>Feature Engineering Intro:</h1>
 
   **Step 1:** Firstly we analysis the data and detect missing values and handle them with appropriate methods. 
 
@@ -81,7 +79,7 @@ results are the same(as shown below).
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Models Implemented:**
+<h1>Models Implemented:</h1>
 
 - Time Series Models: AR, MA and ARIMA 
 - Machine learning models: Lasso Regression and Random Forest 
@@ -91,7 +89,7 @@ results are the same(as shown below).
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Evaluation Matrix:**
+<h1>Evaluation Matrix:</h1>
 
 After applying different models we have to check the accuracy of the model and for that we are using RMSE and adjusted R^2 score. 
 
@@ -101,7 +99,7 @@ R2 score will be used for Time Series models because Adjusted R2 will help in ev
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Data Pre-Processing:**
+<h1>Data Pre-Processing:</h1>
 
   **1)Label Encoder/One Hot Vector:** In our dataset, there are categorical variables and to apply the ML models, we need to transform these categorical variables into numerical variables. And this problem is solved in the feature engineering section. 
 
@@ -123,7 +121,7 @@ R2 score will be used for Time Series models because Adjusted R2 will help in ev
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Time Series Analysis**
+<h1>Time Series Analysis</h1>
 
 A moving average is a calculation used to analyze data points by creating a series of averages of different subsets of the full data set.  
 
@@ -171,7 +169,7 @@ A Seasonal ARIMAX model is formed by including additional seasonal terms in the 
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Machine Learning Models:**
+<h1>Machine Learning Models:</h1>
 
 1) **Lasso Regression:** LASSO stands for Least Absolute Shrinkage and Selection Operator. 
 
@@ -226,7 +224,7 @@ Result:
   <img src="README.016.png" alt="hr" width=100%/>
 </p>
 
-**Over-All Evaluation:**
+<h1>Over-All Evaluation:</h1>
 
 The below graph shows that Random Forest Regressor performs better as compared to other models. 
 
@@ -241,18 +239,17 @@ For DNN, we have done hyperparameter tuning manually, but these are not the opti
   <img src="README.016.png" alt="hr" width=50%/>
 </p>
 
-<p align="center">
+
   
-Contributors: 
+<h1>Contributors: </h1>
 
-**[Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/)**
+<h4 align="center"> [Akhitha Babu](https://www.linkedin.com/in/akhitha-babu-b1a951115/) </h4>
 
-**[Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/)**
+<h4 align="center"> [Sajal Sharma](https://www.linkedin.com/in/sajal--sharma/) </h4>
 
-**[Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/)**
+<h4 align="center"> [Panwar Abhash Anil](https://www.linkedin.com/in/abhash-panwar-85126976/) </h4>
 
-</p>
+
 <p align="center">
   <img src="README.016.png" alt="hr" width=50%/>
 </p>
-
